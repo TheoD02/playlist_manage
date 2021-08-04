@@ -24,7 +24,7 @@ const forceAnalyseLocalTracks = false;
                 const id3tag = await mm.parseFile(f);
                 console.log(id3tag);
                 localTracksInfo.push({
-                    title: '',
+                    title: id3tag.title,
                     artist: '',
                     trackId: 0,
                     path: {
